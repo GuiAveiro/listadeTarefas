@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    background: rgb(173, 109, 242);
+    background: linear-gradient(90deg, rgba(173, 109, 242, 1) 25%, rgba(123, 180, 233, 1) 88%);
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.container {
+    background-color: white;
+    width: 541px;
+    margin-top: 20px;
+    border-radius: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 20px;
+}
+
+#botao-add {
+    background: #8052EC;
+    width: 130px;
+    height: 35px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-size: 17px;
+    float: right;
+    transition: 0.7s ease-in-out;
+}
+
+#botao-add:hover {
+    background: white;
+    color: black;
+    box-shadow: 3px 3px 3px 2px black;
+}
+
+#botao-add:active {
+    opacity: 0.5;
+    background: white;
+    color: black;
+    box-shadow: 3px 3px 3px 2px black;
+    font-weight: bold;
+}
+
+#input-one {
+    width: 347px;
+    height: 35px;
+    border-radius: 5px;
+    border: solid 1px black;
+    box-shadow: 3px 3px 3px 2px black;
+    padding-left: 15px;
+}
+
+#tarefas {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.itens-tarefas {
+    background: #F2F2F2;
+    border-radius: 5px;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px 40px;
+    cursor: pointer;
+    position: relative;
+    margin-top: 25px;
+}
+
+.nome-tarefa {
+    font-size: 15px;
+    color: black;
+}
+
+.botao-del {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    opacity: 0;
+    transition: opacity .7s ease-in-out;
+}
+
+.fa-trash-can {
+    color: red;
+}
+
+.foguete-botao {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 100%;
+}
+
+.fa-rocket {
+    color: #8052EC;
+}
+
+.itens-tarefas:hover .botao-del {
+    opacity: 1;
+}
+
+.concluido {
+    background-color: rgb(203, 236, 203);
+    text-decoration: line-through;
+}
